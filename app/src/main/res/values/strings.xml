@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android_Me</string>
+    <string name="body_part_fragment_image_desc">Image for body part fragment</string>
 </resources>
