@@ -30,7 +30,11 @@ This means creating a new layout folder for tablet screens and another activity_
         android:name="com.example.android.android_me.ui.MasterListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
-
+    <!-- A small divider -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
     <include
         android:id="@+id/body_part_container"
         android:layout_width="0dp"
