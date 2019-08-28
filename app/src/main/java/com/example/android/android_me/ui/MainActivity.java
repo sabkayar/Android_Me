@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
                 mBodyIndex = listIndex;
                 break;
             case 2:
-                mBodyIndex = listIndex;
+                mLegsIndex = listIndex;
                 break;
         }
         // DONE (2) Based on where a user has clicked, store the selected list index for the head, body, and leg BodyPartFragments
