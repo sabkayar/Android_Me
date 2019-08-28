@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
         // Create a Toast that displays the position that was clicked
         Toast.makeText(this, "Position clicked = " + position, Toast.LENGTH_SHORT).show();
 
-        // TODO (5) Handle the two-pane case and replace existing fragments right when a new image is selected from the master list
+        // DONE (5) Handle the two-pane case and replace existing fragments right when a new image is selected from the master list
         // The two-pane case will not need a Bundle or Intent since a new activity will not be started;
         // This is all happening in this MainActivity and one fragment will be replaced at a time
 
@@ -109,7 +109,6 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
             BodyPartFragment newFragment = new BodyPartFragment();
             switch (bodyPartNumber) {
                 case 0:
-                    newFragment = new BodyPartFragment();
                     newFragment.setImageIds(AndroidImageAssets.getHeads());
                     newFragment.setListIndex(listIndex);
                     getSupportFragmentManager().beginTransaction()
@@ -117,7 +116,6 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
                             .commit();
                     break;
                 case 1:
-                    newFragment = new BodyPartFragment();
                     newFragment.setImageIds(AndroidImageAssets.getBodies());
                     newFragment.setListIndex(listIndex);
                     getSupportFragmentManager().beginTransaction()
@@ -125,7 +123,6 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
                             .commit();
                     break;
                 case 2:
-                    newFragment = new BodyPartFragment();
                     newFragment.setImageIds(AndroidImageAssets.getLegs());
                     newFragment.setListIndex(listIndex);
                     getSupportFragmentManager().beginTransaction()
